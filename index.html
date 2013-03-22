@@ -154,7 +154,7 @@ function pgAlert(tit,com){
 
 jQuery(document).ready(function($) {
 	document.addEventListener("deviceready", function(){
-		alert('ok');
+		
 $(".submit").on("tap",function(){
 
 
@@ -172,10 +172,20 @@ data: {
 }).done(function(msg) {
 	
 pgAlert("Mensaje",'Tu mensaje ha sido enviado.');
+ $('#nombre').val('');
+  $('#telefono').val('');
+  $('#email').val('');
+  $('#comentarios').val('');
+
 
 });
 
 });
+
+ $('input[type=text]').on("tap",function(){
+ 	 $(this).focus();
+ });
+
 
 
 });
