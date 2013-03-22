@@ -146,11 +146,12 @@ td label {
 </table>
 </form>
 <script>
+
 jQuery(document).ready(function($) {
 $(".submit").tap("tap",function(){
 	$.ajax({
 type: "POST",
-url: "contacto.php",
+url: "http://www.jbandala.com/mobile/contacto.php",
  beforeSend: function () {
 $('.hid').css("display","block");
 },
