@@ -33,7 +33,7 @@ $mail->SMTPAuth = true;
 $mail->Username = "iwsoft.mexico@gmail.com";
  $mail->Password = "iwsoftWmaster";
 
-    $mail->From = "iwsoft.mexico@gmail.com";
+    $mail->From = "Jbandala";
   
       $mail->FromName = $_POST['nombre'];
    

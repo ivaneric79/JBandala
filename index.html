@@ -87,10 +87,10 @@ td label {
 
 <tbody><tr>
 
- <td valign="top" >
-  <label for="first_name">Nombre *</label>
+ <td valign="center" >
+  <label for="nombre">Nombre*</label>
  </td>
- <td valign="top">
+ <td valign="center">
   <input type="text" id="nombre" name="nombre" maxlength="50" size="20">
   
  </td>
@@ -99,29 +99,29 @@ td label {
  
 
 <tr>
- <td valign="top">
-  <label for="email">E-Mail *</label>
+ <td valign="center">
+  <label for="email">E-Mail*</label>
  </td>
- <td valign="top">
+ <td valign="center">
   <input type="text" id="email" name="email" maxlength="80" size="20">
  </td>
  
 </tr>
 <tr></tr>
 <tr>
- <td valign="top">
-  <label for="telephone">Teléfono</label>
+ <td valign="center">
+  <label for="telefono">Teléfono</label>
  </td>
- <td valign="top">
+ <td valign="center">
   <input type="text" id="telefono" name="telefono" maxlength="30" size="15">
  </td>
 </tr>
 <tr></tr>
 <tr>
- <td valign="top">
-  <label for="comments">Mensaje *</label>
+ <td valign="center">
+  <label for="mensaje">Mensaje *</label>
  </td>
- <td valign="top">
+ <td valign="center">
   <textarea id="comentarios" name="mensaje" maxlength="1000" cols="25" rows="6"></textarea>
  </td>
  
@@ -130,21 +130,20 @@ td label {
 <tr>
  <td colspan="2" style="text-align:right">
   <input class="submit" type="submit" value="Enviar">
-  <span class="hid">Enviando....</span>
- </td>
+  </td>
 </tr>
 
 </tbody></table>
 			</td>
 	</tr>
-	<tr>
+	<!--<tr>
 		<td>
 			<img src="imagenes/contacto_03.png" width="116" height="53" alt=""></td>
 		<td>
 			<img src="imagenes/contacto_04.png" width="70" height="53" alt=""></td>
 		<td>
 			<img src="imagenes/contacto_05.png" width="134" height="53" alt=""></td>
-	</tr>
+	</tr>-->
 </table>
 
 <script>
@@ -158,12 +157,12 @@ jQuery(document).ready(function($) {
 		alert('ok');
 $(".submit").on("tap",function(){
 
-pgAlert("TAP",'TAP');
+
 $.ajax({
 type: "POST",
 url: "http://www.jbandala.com/mobile/contacto.php",
  beforeSend: function () {
-$('.hid').css("display","block");
+pgAlert("Confirma",'OK');
 },
 data: { 
 	nombre:  $('#nombre').val() , 
@@ -171,8 +170,8 @@ data: {
 	 email: $('#email').val(),
 	 mensaje:  $('#comentarios').val() }
 }).done(function(msg) {
-	$('.hid').css("display","none");
-pgAlert("Error",'Todos los campos son requeridos.');
+	
+pgAlert("Mensaje",'Tu mensaje ha sido enviado.');
 
 });
 
