@@ -147,9 +147,15 @@ td label {
 </form>
 <script>
 
+function pgAlert(tit,com){
+	navigator.notification.alert(com, null, tit, "OK");
+}
+
 jQuery(document).ready(function($) {
-$(".submit").tap("tap",function(){
-	$.ajax({
+	document.addEventListener("deviceready", function(){
+$(".submit").on("tap",function(){
+	pgAlert("TAP",'TAP');
+/**	$.ajax({
 type: "POST",
 url: "http://www.jbandala.com/mobile/contacto.php",
  beforeSend: function () {
@@ -162,12 +168,14 @@ data: {
 	 mensaje:  $('#comentarios').val() }
 }).done(function(msg) {
 	$('.hid').css("display","none");
-alert(msg);
+pgAlert("Error",'Todos los campos son requeridos.');
+
+});*/
 
 });
 
-});
 
+});
 
 });
 </script>

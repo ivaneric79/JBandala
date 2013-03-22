@@ -12,6 +12,18 @@
     <author href="http://www.jbandala.com" email="ivaneric79@gmail.com">
        Ivan Eric López
     </author>
+    
+          <feature name="http://api.phonegap.com/1.0/device" />
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+<feature name="http://api.phonegap.com/1.0/camera"/>
+<feature name="http://api.phonegap.com/1.0/contacts"/>
+<feature name="http://api.phonegap.com/1.0/file"/>
+<feature name="http://api.phonegap.com/1.0/geolocation"/>
+<feature name="http://api.phonegap.com/1.0/media"/>
+<feature name="http://api.phonegap.com/1.0/network"/>
+<feature name="http://api.phonegap.com/1.0/notification"/>
+<plugin name="Storage" value="org.apache.cordova.Storage" />
+<plugin name="Capture" value="org.apache.cordova.Capture"/>
 
     <feature name="http://api.phonegap.com/1.0/device" />
 
