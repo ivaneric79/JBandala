@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "com.jbandala.jbandala"
+        version = "0.0.1">
+    <name>JBandala</name>
+
+    <description>
+       JBandala App
+    </description>
+
+    <author href="http://www.jbandala.com" email="ivaneric79@gmail.com">
+       Ivan Eric López
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="phonegap-version" value="2.3.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+
+    <icon src="icon.png" />
+    <icon src="images/36.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="images/48.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="images/72.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="images/96.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="images/72.png" gap:platform="ios" width="57" height="57" />
+    <icon src="images/72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="images/72.png" gap:platform="ios" width="114" height="114" />
+    <icon src="images/72.png" gap:platform="ios" width="144" height="144" />
+
+
+
+    <gap:splash src="images/splash.jpg" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="images/splash.jpg" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="images/splash.jpg" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="images/splash.jpg" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="images/splash.jpg" gap:platform="blackberry" />
+    <gap:splash src="images/splash.jpg" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="images/splash.jpg" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="images/splash.jpg" gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="images/splash.jpg" gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="images/splash.jpg" gap:platform="winphone" />
+	<access origin="*" subdomains="true"/>
+</widget>
